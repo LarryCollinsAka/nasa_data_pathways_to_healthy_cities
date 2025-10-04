@@ -36,12 +36,9 @@ These three were chosen because:
 
 ### Problem Exploration – The 5 Whys
 
-To ensure our solution addresses root causes rather than symptoms, we applied the **5 Whys methodology** to three pressing urban challenges. This structured brainstorming shows how we arrived at our focus areas and data choices.
+To ensure we address root causes rather than symptoms, we applied the **5 Whys methodology** to each selected challenge.
 
-### Case Studies
-We did some research across 6 cities Douala, Yaounde, Lagos, Mumbai, Abuja and Pune. We 
-
-#### 1. Flooding in Douala
+#### Flooding in Douala
 - **Symptom:** Neighborhoods regularly submerge during heavy rains.  
 - **Why 1:** Drainage systems are overwhelmed.  
 - **Why 2:** Urban expansion encroaches on floodplains.  
@@ -50,7 +47,7 @@ We did some research across 6 cities Douala, Yaounde, Lagos, Mumbai, Abuja and P
 - **Why 5:** Satellite-based monitoring and predictive analytics are underused.  
 - **Problem Statement:** Douala faces recurrent flooding due to unplanned growth and inadequate drainage; integrating NASA precipitation and elevation data is essential to anticipate and mitigate risk.
 
-#### 2. Heat Stress in Mumbai
+#### Heat Stress in Mumbai
 - **Symptom:** Intensifying heatwaves cause health risks and discomfort.  
 - **Why 1:** Dense built-up areas trap heat (urban heat islands).  
 - **Why 2:** Insufficient green cover and reflective surfaces.  
@@ -59,7 +56,7 @@ We did some research across 6 cities Douala, Yaounde, Lagos, Mumbai, Abuja and P
 - **Why 5:** Data-to-action pipelines for cooling interventions are missing.  
 - **Problem Statement:** Mumbai’s heat stress threatens health and livability; using NASA thermal and vegetation data can guide targeted cooling and greening.
 
-#### 3. Waste & Land Use in Lagos
+#### Waste & Land Use in Lagos
 - **Symptom:** Unmanaged waste and rapid land-use change degrade environments.  
 - **Why 1:** Population growth outpaces waste systems.  
 - **Why 2:** Informal settlements expand without infrastructure.  
@@ -69,30 +66,3 @@ We did some research across 6 cities Douala, Yaounde, Lagos, Mumbai, Abuja and P
 - **Problem Statement:** Lagos struggles with waste and unplanned land use; NASA land cover and nighttime lights data provide the visibility needed for smarter interventions.
 
 ---
-
-
-###  Focus Area
-- Case study: **Douala & Yaoundé (Cameroon)**
-- Urban challenges: waste management, flooding, air quality, lack of green spaces
-
-###  Project Idea
-Build a **data-driven platform** that:
-- Maps waste hotspots using satellite & community data
-- Monitors air quality and flooding risks
-- Supports planning for green spaces and infrastructure
-- Engages communities through reporting + AI insights
-
-###  NASA Data Sources
-- **Landsat** – urban growth & land use
-- **MODIS** – air quality & climate indicators
-- **GRACE** – water & flooding risks
-- **VIIRS** – population density (nighttime lights)
-
-###  Tech Stack
-- **Backend**: Python (FastAPI/Django, Pandas, GeoPandas, NASA APIs)
-- **Frontend**: React (interactive dashboards, maps)
-- **Visualization**: Mapbox / Leaflet / Power BI
-- **Hosting**: AWS (S3 + CloudFront)
-
-###  Repository Structure
-
