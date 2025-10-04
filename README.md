@@ -66,3 +66,28 @@ To ensure we address root causes rather than symptoms, we applied the **5 Whys m
 - **Problem Statement:** Lagos struggles with waste and unplanned land use; NASA land cover and nighttime lights data provide the visibility needed for smarter interventions.
 
 ---
+
+### Data Resources
+Our solution integrates **NASA Earth observation datasets** with local/community inputs:
+
+- **Flood Risk (Douala):**  
+  - IMERG (GPM mission) for precipitation intensity and timing  
+  - GFMS for flood monitoring  
+  - SRTM elevation data for floodplain mapping  
+
+- **Heat Stress (Mumbai):**  
+  - MODIS Land Surface Temperature (LST)  
+  - ECOSTRESS for neighborhood-scale thermal stress  
+  - NDVI from MODIS/Landsat for vegetation cover  
+
+- **Waste & Land Use (Lagos):**  
+  - Landsat 8/9 for land cover classification  
+  - VIIRS Nighttime Lights as a proxy for urban activity  
+  - SEDAC population density grids for vulnerability context  
+
+- **Cross-cutting:**  
+  - Aura/OMI air quality indicators (NO₂, SO₂)  
+  - Local community reports (crowdsourced via Uby’s reporting form)  
+  - Open civic datasets (roads, drainage, clinics, schools)
+
+---
