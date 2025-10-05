@@ -5,8 +5,8 @@
             "type": "Feature",
             "properties": {
                 "city": "DLACEN",
-                "risk_level": "low",
-                "score": 0.059999999999999984
+                "landuse_level": "low",
+                "index": 0.0
             },
             "geometry": {
                 "type": "Point",
@@ -20,8 +20,8 @@
             "type": "Feature",
             "properties": {
                 "city": "DLANRT",
-                "risk_level": "medium",
-                "score": 0.4982618400621118
+                "landuse_level": "high",
+                "index": 0.7398473655766655
             },
             "geometry": {
                 "type": "Point",
@@ -35,8 +35,8 @@
             "type": "Feature",
             "properties": {
                 "city": "DLASOU",
-                "risk_level": "high",
-                "score": 1.0
+                "landuse_level": "high",
+                "index": 1.0
             },
             "geometry": {
                 "type": "Point",
@@ -50,8 +50,8 @@
             "type": "Feature",
             "properties": {
                 "city": "DLAWST",
-                "risk_level": "high",
-                "score": 0.83112674689441
+                "landuse_level": "high",
+                "index": 0.92595061122275
             },
             "geometry": {
                 "type": "Point",
