@@ -3,10 +3,15 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 import os
 
+from routers import flood ###Flood route
+
 app = FastAPI()
 
-frontend_path = os.path.join(os.path.dirname(__file__), "frontend/dist")
+# include routers
+app.include_router(flood.router)
 
+# serve frontend
+frontend_path = os.path.join(os.path.dirname(__file__), "frontend/dist")
 if os.path.exists(frontend_path):
     app.mount("/assets", StaticFiles(directory=os.path.join(frontend_path, "assets")), name="assets")
 

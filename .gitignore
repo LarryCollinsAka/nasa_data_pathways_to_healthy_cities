@@ -3,3 +3,4 @@ Architecture.md
 .env
 .node_modules
 *.pyc
+WORKFLOW.md
