@@ -20,3 +20,4 @@ pulp
 
 # Utilities
 requests
+python-dotenv

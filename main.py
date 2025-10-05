@@ -1,10 +1,12 @@
+from dotenv import load_dotenv
+load_dotenv()
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 import os
 
-from routers import layers ###Flood route
+from routers import layers, analysis, chat
 
 app = FastAPI(title="Douala Risk Dashboard API")
 
@@ -18,6 +20,8 @@ app.add_middleware(
 )
 # include routers
 app.include_router(layers.router)
+app.include_router(analysis.router)
+app.include_router(chat.router)
 
 # serve frontend
 frontend_path = os.path.join(os.path.dirname(__file__), "frontend/dist")
