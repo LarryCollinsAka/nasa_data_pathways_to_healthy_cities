@@ -16,5 +16,8 @@ export default defineConfig({
     proxy: {
       '/api': 'http://localhost:8000', // FastAPI backend
   }
-}
+},
+optimizeDeps: {
+    include: ["leaflet/dist/leaflet.css"],   //force include
+  },
 });
