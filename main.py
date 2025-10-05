@@ -1,14 +1,23 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 import os
 
-from routers import flood ###Flood route
+from routers import layers ###Flood route
 
-app = FastAPI()
+app = FastAPI(title="Douala Risk Dashboard API")
 
+# --- CORS (so your React frontend can fetch data) ---
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 # include routers
-app.include_router(flood.router)
+app.include_router(layers.router)
 
 # serve frontend
 frontend_path = os.path.join(os.path.dirname(__file__), "frontend/dist")
