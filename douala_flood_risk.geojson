@@ -1,0 +1,39 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "city": "Douala",
+                "risk_level": "high"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            9.705,
+                            3.965
+                        ],
+                        [
+                            9.735000000000001,
+                            3.965
+                        ],
+                        [
+                            9.735000000000001,
+                            3.995
+                        ],
+                        [
+                            9.705,
+                            3.995
+                        ],
+                        [
+                            9.705,
+                            3.965
+                        ]
+                    ]
+                ]
+            }
+        }
+    ]
+}
